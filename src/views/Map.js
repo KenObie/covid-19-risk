@@ -1,14 +1,9 @@
 import React from "react";
-// react plugin used to create charts
-import { Line, Pie } from "react-chartjs-2";
-// reactstrap components
 import Gps from "./Gps";
 import {
   Card,
   CardHeader,
   CardBody,
-  CardFooter,
-  CardTitle,
   Row,
   Col,
 } from "reactstrap";

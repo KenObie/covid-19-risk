@@ -1,21 +1,15 @@
 import React from "react";
-// react plugin used to create charts
-import { Line, Pie } from "react-chartjs-2";
-// reactstrap components
-import Casecount from "./Casecount";
-import Casecount2 from "./Casecount2";
-import Gps2 from "./Gps2";
+import NormalizedCaseCount from "./NormalizedCaseCount";
 import {
   Card,
   CardHeader,
   CardBody,
-  CardFooter,
   CardTitle,
   Row,
   Col,
 } from "reactstrap";
 
-function Dashboard() {
+function Home() {
   return (
     <>
       <div className="content">
@@ -38,7 +32,7 @@ We chose to use this project as an opportunity to dive into the data collected o
               <CardHeader>
               </CardHeader>
               <CardBody>
-                <Gps2/>
+                <NormalizedCaseCount/>
               </CardBody>
             </Card>
           </Col>
@@ -48,4 +42,4 @@ We chose to use this project as an opportunity to dive into the data collected o
   );
 }
 
-export default Dashboard;
+export default Home;
