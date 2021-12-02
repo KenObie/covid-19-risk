@@ -8,7 +8,7 @@ import {
   Col,
 } from "reactstrap";
 
-function User() {
+function Clusters() {
   return (
     <>
       <div className="content">
@@ -28,4 +28,4 @@ function User() {
   );
 }
 
-export default User;
+export default Clusters;

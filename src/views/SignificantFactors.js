@@ -1,5 +1,5 @@
 import React from "react";
-import Casecount from "./Casecount";
+import Gps from "./Gps";
 import {
   Card,
   CardHeader,
@@ -8,7 +8,7 @@ import {
   Col,
 } from "reactstrap";
 
-function Icons() {
+function SignificantFactors() {
   return (
     <>
       <div className="content">
@@ -18,7 +18,7 @@ function Icons() {
               <CardHeader>
               </CardHeader>
               <CardBody>
-                <Casecount/>
+                <Gps/>
               </CardBody>
             </Card>
           </Col>
@@ -28,4 +28,4 @@ function Icons() {
   );
 }
 
-export default Icons;
+export default SignificantFactors;

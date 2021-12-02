@@ -2,7 +2,7 @@ import React from "react";
 import PerfectScrollbar from "perfect-scrollbar";
 import { Route, Switch, useLocation } from "react-router-dom";
 
-import DemoNavbar from "components/Navbars/DemoNavbar.js";
+import TopNavigation from "components/Navbars/TopNavigation.js"
 import Footer from "components/Footer/Footer.js";
 import Sidebar from "components/Sidebar/Sidebar.js";
 
@@ -31,12 +31,6 @@ function Dashboard(props) {
     mainPanel.current.scrollTop = 0;
     document.scrollingElement.scrollTop = 0;
   }, [location]);
-  // const handleActiveClick = (color) => {
-  //   setActiveColor(color);
-  // };
-  // const handleBgClick = (color) => {
-  //   setBackgroundColor(color);
-  // };
   return (
     <div className="wrapper">
       <Sidebar
@@ -46,7 +40,7 @@ function Dashboard(props) {
         activeColor={activeColor}
       />
       <div className="main-panel" ref={mainPanel}>
-        <DemoNavbar {...props} />
+        <TopNavigation {...props} />
         <Switch>
           {routes.map((prop, key) => {
             return (

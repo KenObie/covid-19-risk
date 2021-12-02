@@ -12,7 +12,6 @@ import routes from "routes.js";
 
 function Header(props) {
   const [isOpen, setIsOpen] = React.useState(false);
-  // const [dropdownOpen, setDropdownOpen] = React.useState(false);
   const [color, setColor] = React.useState("transparent");
   const sidebarToggle = React.useRef();
   const location = useLocation();
@@ -24,9 +23,6 @@ function Header(props) {
     }
     setIsOpen(!isOpen);
   };
-  // const dropdownToggle = (e) => {
-  //   setDropdownOpen(!dropdownOpen);
-  // };
   const getBrand = () => {
     let brandName = "Default Brand";
     routes.map((prop, key) => {
@@ -41,7 +37,6 @@ function Header(props) {
     document.documentElement.classList.toggle("nav-open");
     sidebarToggle.current.classList.toggle("toggled");
   };
-  // function that adds color dark/transparent to the navbar on resize (this is for the collapse)
   const updateColor = () => {
     if (window.innerWidth < 993 && isOpen) {
       setColor("dark");
@@ -62,7 +57,6 @@ function Header(props) {
     }
   }, [location]);
   return (
-    // add or remove classes depending if we are on full-screen-maps page or not
     <Navbar
       color={
         props.location.pathname.indexOf("full-screen-maps") !== -1

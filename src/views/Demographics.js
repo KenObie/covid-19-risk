@@ -1,5 +1,5 @@
 import React from "react";
-import Gps3 from "./Gps3";
+import Casecount from "./Casecount";
 import {
   Card,
   CardHeader,
@@ -8,7 +8,7 @@ import {
   Col,
 } from "reactstrap";
 
-function Notifications() {
+function Demographics() {
   return (
     <>
       <div className="content">
@@ -18,7 +18,7 @@ function Notifications() {
               <CardHeader>
               </CardHeader>
               <CardBody>
-                <Gps3/>
+                <Casecount/>
               </CardBody>
             </Card>
           </Col>
@@ -28,4 +28,4 @@ function Notifications() {
   );
 }
 
-export default Notifications;
+export default Demographics;
