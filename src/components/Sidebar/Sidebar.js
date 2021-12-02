@@ -34,14 +34,14 @@ function Sidebar(props) {
       data-active-color={props.activeColor}
     >
       <div className="logo">
-        <a
+        <a href={() => false}
           className="simple-text logo-mini"
         >
           <div className="logo-img">
             <img src={logo} alt="react-logo" />
           </div>
         </a>
-        <a
+        <a href={() => false}
           className="simple-text logo-normal"
         >
           COVID Risk
